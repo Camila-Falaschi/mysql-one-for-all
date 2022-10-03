@@ -1,0 +1,12 @@
+SELECT cancao AS nome_musica,
+CASE
+	WHEN cancao LIKE '%Bard%' THEN REPLACE(cancao, 'Bard', 'QA')
+	WHEN cancao LIKE '%Amar%' THEN REPLACE(cancao, 'Amar', 'Code Review')
+	WHEN cancao LIKE '%Pais%' THEN REPLACE(cancao, 'Pais', 'Pull Requests')
+	WHEN cancao LIKE '%SOUL%' THEN REPLACE(cancao, 'SOUL', 'CODE')
+	WHEN cancao LIKE '%SUPERSTAR%' THEN REPLACE(cancao, 'SUPERSTAR', 'SUPERDEV')
+	ELSE cancao
+END AS novo_nome
+FROM SpotifyClone.cancoes
+WHERE id IN (1, 3, 6, 7, 9)
+ORDER BY nome_musica DESC;
