@@ -7,4 +7,4 @@ ON SpotifyClone.usuarios.id = SpotifyClone.historico_de_reproducoes.usuario_id
 INNER JOIN SpotifyClone.cancoes
 ON SpotifyClone.historico_de_reproducoes.cancao_id = SpotifyClone.cancoes.id
 GROUP BY SpotifyClone.usuarios.id
-ORDER BY SpotifyClone.usuarios.usuario
+ORDER BY SpotifyClone.usuarios.usuario;

@@ -5,4 +5,4 @@ FROM SpotifyClone.cancoes
 INNER JOIN SpotifyClone.albuns
 ON SpotifyClone.cancoes.album_id = SpotifyClone.albuns.id
 INNER JOIN SpotifyClone.artistas
-ON SpotifyClone.albuns.artista_id = SpotifyClone.artistas.id
+ON SpotifyClone.albuns.artista_id = SpotifyClone.artistas.id;
